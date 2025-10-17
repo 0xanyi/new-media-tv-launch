@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Media TV - Studio Launch Event</title>
+    <meta name="description" content="Join us for the historic launch of New Media TV - the future of streaming begins October 18th at 11 AM">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="hero-section">
+            <div class="hero-background">
+                <div class="gradient-overlay"></div>
+                <div class="particle-effect"></div>
+            </div>
+            
+            <div class="hero-content">
+                <div class="logo-container">
+                    <img src="assets/logo.png" alt="New Media TV" class="logo" id="main-logo">
+                </div>
+                
+                <div class="event-info">
+                    <h1 class="main-title">
+                        <span class="title-line subtitle">Studio Launch Event</span>
+                    </h1>
+                    
+                    <div class="event-details">
+                        <div class="date-time">
+                            <div class="date">Saturday, October 18th</div>
+                            <div class="time">11:00 AM GMT+1</div>
+                        </div>
+                    </div>
+                    
+                    <div class="countdown-container">
+                        <div class="countdown-title">Launch Begins In</div>
+                        <div class="countdown" id="countdown">
+                            <div class="countdown-item">
+                                <span class="countdown-value" id="days">00</span>
+                                <span class="countdown-label">Days</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span class="countdown-value" id="hours">00</span>
+                                <span class="countdown-label">Hours</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span class="countdown-value" id="minutes">00</span>
+                                <span class="countdown-label">Minutes</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span class="countdown-value" id="seconds">00</span>
+                                <span class="countdown-label">Seconds</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="video-section">
+            <div class="video-container">
+                <div class="video-wrapper">
+                    <video 
+                        id="video-player" 
+                        class="video-player"
+                        controls
+                        autoplay
+                        muted
+                        poster="assets/poster.png"
+                        preload="metadata"
+                        playsinline
+                    >
+                        <p class="no-support">Your browser doesn't support HTML5 video.</p>
+                    </video>
+                    <div class="video-overlay" id="video-overlay">
+                        <div class="play-button" id="play-button">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                                <circle cx="40" cy="40" r="40" fill="rgba(255, 255, 255, 0.9)"/>
+                                <path d="M30 25L30 55L55 40L30 25Z" fill="#1a1a2e"/>
+                            </svg>
+                        </div>
+                        <div class="video-loading" id="video-loading" style="display: none;">
+                            <div class="loading-spinner"></div>
+                            <p>Preparing stream...</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="video-info">
+                    <h2 class="video-title">Live Launch Event Stream</h2>
+                    <p class="video-description">Join us for the historic moment as we unveil the future of streaming entertainment.</p>
+                    <div class="stream-status">
+                        <span class="status-indicator" id="status-indicator"></span>
+                        <span class="status-text" id="status-text">Stream Starting Soon</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="brand">
+                    <img src="assets/logo.png" alt="New Media TV" class="footer-logo">
+                    <span class="brand-name">New Media TV</span>
+                </div>
+                <div class="footer-text">
+                    © 2025 New Media TV. The future of streaming starts here.
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

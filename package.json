@@ -1,0 +1,23 @@
+{
+  "name": "new-media-tv-launch",
+  "version": "1.0.0",
+  "description": "New Media TV Studio Launch Event Website",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python3 -m http.server 8000",
+    "start": "python3 -m http.server 8000",
+    "build": "echo 'Build complete - static files ready for deployment'",
+    "preview": "python3 -m http.server 8000"
+  },
+  "keywords": [
+    "new-media-tv",
+    "launch-event",
+    "live-streaming",
+    "hls",
+    "video-player"
+  ],
+  "author": "New Media TV",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {}
+}
