@@ -26,7 +26,7 @@ class NewMediaTVLaunch {
         const videoLoading = document.getElementById('video-loading');
 
         // TODO: Replace with your actual HLS stream URL
-        const hlsStreamUrl = 'https://stream-hls.castr.net/669859478d4515508937865a/live_98c5c5e06bb711efa7fb7fc6a849f4ff/index.m3u8';
+        const hlsStreamUrl = 'https://stream-hls.castr.net/669859478d4515508937865a/live_51037060afc611ef8ebc67d67773d23d/index.m3u8';
         // Example formats:
         // - 'https://cdn.your-streaming-provider.com/live/stream.m3u8'
         // - 'https://live.example.com/media/playlist.m3u8'
